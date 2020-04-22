@@ -34,8 +34,25 @@ TEST(PracticeTest, is_not_a_palindrome)
 	Practice obj;
 	ASSERT_FALSE(obj.isPalindrome("ab"));
 	ASSERT_TRUE(obj.isPalindrome("Bab"));
+	ASSERT_TRUE(obj.isPalindrome("1\0"));
 	ASSERT_TRUE(obj.isPalindrome("Aa"));
 	ASSERT_FALSE(obj.isPalindrome("abc12cba"));
+}
+
+TEST(PracticeTest, very_unhappy_palindrome_forward) {
+	for(int i='Z'+1; i<'z'; i++) {
+		char a = i;
+		char b = i+('a'-'A');
+		ASSERT_TRUE(obj.isPalindrome(std::string(a)+std::string(b));
+	}
+}
+
+TEST(PracticeTest, very_unhappy_palindrome_backward) {
+	for(int i='A'-1; i<0; i--) {
+		char a = i;
+		char b = i+('a'-'A');
+		ASSERT_TRUE(obj.isPalindrome(std::string(a)+std::string(b));
+	}
 }
 
 TEST(PracticeTest, sort_decending)
