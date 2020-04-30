@@ -87,7 +87,7 @@ TEST(PracticeTest, palindrome_three_char_lower_uppercase)
     ASSERT_TRUE(obj.isPalindrome("baB"));
 }
 
-TEST(PracticeTest, palindrome_double_char)
+TEST(PracticeTest, palindrome_two_char)
 {
 	Practice obj;
 	ASSERT_FALSE(obj.isPalindrome("ab"));
