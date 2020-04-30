@@ -107,9 +107,9 @@ TEST(PracticeTest, sort_out_of_order)
 	int b;
 	int c;
 	obj.sortDescending(a=3, b=2, c=1);
-		ASSERT_EQ(a, 1);
+		ASSERT_EQ(a, 3);
 		ASSERT_EQ(b, 2);
-		ASSERT_EQ(c, 3);
+		ASSERT_EQ(c, 1);
 }
 
 TEST(PracticeTest, sort_all_equal) {
@@ -134,9 +134,9 @@ TEST(PracticeTest, sort_in_order) {
 	int a, b, c;
 	Practice obj;
 	obj.sortDescending(a=1, b=2, c=3);
-		ASSERT_EQ(a, 1);
+		ASSERT_EQ(a, 3);
 		ASSERT_EQ(b, 2);
-		ASSERT_EQ(c, 3);
+		ASSERT_EQ(c, 1);
 }
 
 TEST(PracticeTest, sort_two_duplicates) {
